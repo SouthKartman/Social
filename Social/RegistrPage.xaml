@@ -1,0 +1,42 @@
+﻿<Page x:Class="Social.RegistrPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Social"
+            mc:Ignorable="d" Title="LoginPage" Height="325" Width="662">
+
+    <Grid Height="335" VerticalAlignment="Top">
+
+        <Border  Margin="156,8,406,324" Background="#FFCD7B00"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="586" Height="38" Foreground="White" SelectionBrush="#FFFFC700" BorderBrush="#FFC7C7C7" FontSize="16" CaretBrush="#FFFFC700" Text="Name">
+            <TextBox.Background>
+                <SolidColorBrush Color="#FFA2A35B" Opacity="0"/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox HorizontalAlignment="Center" Margin="0,70,0,0" TextWrapping="Wrap" Text="Surname" VerticalAlignment="Top" Width="586" Height="39" Foreground="White" SelectionBrush="#FFFFC700" BorderBrush="#FFC7C7C7" FontSize="16" CaretBrush="#FFC7C7C7">
+            <TextBox.Background>
+                <SolidColorBrush Color="#FFA2A35B" Opacity="0"/>
+            </TextBox.Background>
+        </TextBox>
+        <Border BorderThickness="1" Margin="228,0,450,332" Background="#FFCD7B00"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,109,0,0" TextWrapping="Wrap" Text="Login/Username" VerticalAlignment="Top" Width="586" Height="39" Foreground="White" SelectionBrush="#FFFFC700" BorderBrush="#FFC7C7C7" FontSize="16" CaretBrush="#FFC7C7C7">
+            <TextBox.Background>
+                <SolidColorBrush Color="#FFA2A35B" Opacity="0"/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" Text="Password" VerticalAlignment="Center" Width="586" Height="39" Foreground="White" SelectionBrush="#FFFFC700" BorderBrush="#FFC7C7C7" FontSize="16" CaretBrush="#FFC7C7C7">
+            <TextBox.Background>
+                <SolidColorBrush Color="#FFA2A35B" Opacity="0"/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox HorizontalAlignment="Center" Margin="0,187,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" Width="586" Height="39" Foreground="White" SelectionBrush="#FFFFC700" BorderBrush="#FFC7C7C7" FontSize="16" CaretBrush="#FFC7C7C7">
+            <TextBox.Background>
+                <SolidColorBrush Color="#FFA2A35B" Opacity="0"/>
+            </TextBox.Background>
+        </TextBox>
+        <Button Content="Войти" HorizontalAlignment="Left" Margin="22,262,0,0" VerticalAlignment="Top" Width="292" Background="#FFCD7B00" BorderBrush="{x:Null}"/>
+        <Button Content="Зарегистрироваться" HorizontalAlignment="Left" Margin="332,262,0,0" VerticalAlignment="Top" Width="292" Background="#FFCD7B00" BorderBrush="{x:Null}" Cursor="Hand"/>
+    </Grid>
+
+</Page>

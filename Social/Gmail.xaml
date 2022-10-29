@@ -1,0 +1,35 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Social"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Class="Social.Gmail"
+        mc:Ignorable="d"
+        Title="Gmail" Height="556" Width="495" ResizeMode="NoResize" Background="#FF5379FF">
+    <Grid Height="546" VerticalAlignment="Top">
+        <Grid.Background>
+            <ImageBrush ImageSource="/DSC_1642.jpg" TileMode="Tile" Stretch="Fill"/>
+        </Grid.Background>
+
+        <Border Margin="29,87,173,416">
+            <Label Content="Send Email" Foreground="#DDFFFFFF" FontSize="24" FontFamily="Franklin Gothic Demi" Margin="10,5,-32,5"/>
+
+        </Border>
+        <Label Content="Email" HorizontalAlignment="Left" Margin="29,161,0,0" VerticalAlignment="Top" Foreground="#DDFFFFFF" Height="34" Width="91" FontSize="16"/>
+        <Label Content="Object" HorizontalAlignment="Left" Margin="29,200,0,0" VerticalAlignment="Top" Foreground="#DDFFFFFF" Height="34" Width="91" FontSize="16"/>
+        <Label Content="Massage" HorizontalAlignment="Left" Margin="29,239,0,0" VerticalAlignment="Top" Foreground="#DDFFFFFF" Height="34" Width="91" FontSize="16"/>
+        <TextBox HorizontalAlignment="Left" x:Name="Adress" Margin="125,161,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="322" Height="34" Background="#FF212528" FontSize="16" CaretBrush="#FF673AB7" Foreground="White">
+            <TextBox.SelectionBrush>
+                <SolidColorBrush Color="#FF212528" Opacity="0.8"/>
+            </TextBox.SelectionBrush>
+        </TextBox>
+        <TextBox HorizontalAlignment="Left" x:Name="Letter" Margin="125,200,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="322" Height="34" Background="#FF212528" FontSize="16" CaretBrush="#FF673AB7" SelectionBrush="#FF212528" Foreground="White"/>
+        <TextBox HorizontalAlignment="Left" x:Name="Teext" Margin="125,239,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="322" Height="123" Background="#FF212528" FontSize="16" CaretBrush="#FF673AB7" SelectionBrush="#FF212528" Foreground="White"/>
+        <Button Content="Прикрепить файл" HorizontalAlignment="Left" Margin="125,367,0,0" VerticalAlignment="Top" Width="322" Background="#FF212528" BorderBrush="#FF212528" Click="Button_Click_1"/>
+        <Button Content="Закрыть" HorizontalAlignment="Left" Margin="50,439,0,0" VerticalAlignment="Top" Width="126" Background="#FF212528" BorderBrush="#FF212528" Click="Button_Click"/>
+        <Button Content="Отправить" x:Name="Enter" HorizontalAlignment="Left" Margin="322,439,0,0" VerticalAlignment="Top" Width="125" Background="#FF212528" BorderBrush="#FF212528" Click="Enter_Click"/>
+
+    </Grid>
+
+</Window>

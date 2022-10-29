@@ -1,0 +1,26 @@
+﻿<Page x:Class="Social.WorkedPlace"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Social"
+      mc:Ignorable="d"
+      Title="WorkedPlace" Height="552" Width="943">
+
+    <Grid>
+        
+        <Grid.Background>
+            <ImageBrush ImageSource="/DSC_0114.jpg"/>
+        </Grid.Background>
+
+        <StackPanel Margin="40,276,41,44">
+            <Frame></Frame>
+        </StackPanel>
+        <StackPanel Margin="524,10,41,302">
+            <Frame Source=""></Frame>
+        </StackPanel>
+        <StackPanel Margin="524,10,41,302">
+            <Frame Source=""/>
+        </StackPanel>
+    </Grid>
+</Page>
