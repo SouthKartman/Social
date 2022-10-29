@@ -27,6 +27,11 @@
             </Button.BorderBrush>
         </Button>
         <Border  Margin="46,0,516,313" Background="#FFCD7B00"/>
+        <Button  Content="Войти" HorizontalAlignment="Left" Margin="39,252,0,0" VerticalAlignment="Top" Height="31" Width="287" Background="#FFCD7B00" Click="Button_Click_1" Cursor="Hand">
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF673AB7" Opacity="0"/>
+            </Button.BorderBrush>
+        </Button>
     </Grid>
 
 </Page>

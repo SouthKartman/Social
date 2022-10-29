@@ -35,7 +35,6 @@
                 <SolidColorBrush Color="#FFA2A35B" Opacity="0"/>
             </TextBox.Background>
         </TextBox>
-        <Button Content="Войти" HorizontalAlignment="Left" Margin="22,262,0,0" VerticalAlignment="Top" Width="292" Background="#FFCD7B00" BorderBrush="{x:Null}"/>
         <Button Content="Зарегистрироваться" HorizontalAlignment="Left" Margin="332,262,0,0" VerticalAlignment="Top" Width="292" Background="#FFCD7B00" BorderBrush="{x:Null}" Cursor="Hand"/>
     </Grid>
 

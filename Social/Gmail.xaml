@@ -19,16 +19,39 @@
         <Label Content="Email" HorizontalAlignment="Left" Margin="29,161,0,0" VerticalAlignment="Top" Foreground="#DDFFFFFF" Height="34" Width="91" FontSize="16"/>
         <Label Content="Object" HorizontalAlignment="Left" Margin="29,200,0,0" VerticalAlignment="Top" Foreground="#DDFFFFFF" Height="34" Width="91" FontSize="16"/>
         <Label Content="Massage" HorizontalAlignment="Left" Margin="29,239,0,0" VerticalAlignment="Top" Foreground="#DDFFFFFF" Height="34" Width="91" FontSize="16"/>
-        <TextBox HorizontalAlignment="Left" x:Name="Adress" Margin="125,161,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="322" Height="34" Background="#FF212528" FontSize="16" CaretBrush="#FF673AB7" Foreground="White">
+        <TextBox HorizontalAlignment="Left" x:Name="Adress" Margin="125,161,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="322" Height="34" FontSize="16" CaretBrush="#FF673AB7" Foreground="White">
+            <TextBox.Background>
+                <SolidColorBrush Color="#FF212528" Opacity="0.8"/>
+            </TextBox.Background>
             <TextBox.SelectionBrush>
                 <SolidColorBrush Color="#FF212528" Opacity="0.8"/>
             </TextBox.SelectionBrush>
         </TextBox>
-        <TextBox HorizontalAlignment="Left" x:Name="Letter" Margin="125,200,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="322" Height="34" Background="#FF212528" FontSize="16" CaretBrush="#FF673AB7" SelectionBrush="#FF212528" Foreground="White"/>
-        <TextBox HorizontalAlignment="Left" x:Name="Teext" Margin="125,239,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="322" Height="123" Background="#FF212528" FontSize="16" CaretBrush="#FF673AB7" SelectionBrush="#FF212528" Foreground="White"/>
-        <Button Content="Прикрепить файл" HorizontalAlignment="Left" Margin="125,367,0,0" VerticalAlignment="Top" Width="322" Background="#FF212528" BorderBrush="#FF212528" Click="Button_Click_1"/>
-        <Button Content="Закрыть" HorizontalAlignment="Left" Margin="50,439,0,0" VerticalAlignment="Top" Width="126" Background="#FF212528" BorderBrush="#FF212528" Click="Button_Click"/>
-        <Button Content="Отправить" x:Name="Enter" HorizontalAlignment="Left" Margin="322,439,0,0" VerticalAlignment="Top" Width="125" Background="#FF212528" BorderBrush="#FF212528" Click="Enter_Click"/>
+        <TextBox HorizontalAlignment="Left" x:Name="Letter" Margin="125,200,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="322" Height="34" FontSize="16" CaretBrush="#FF673AB7" SelectionBrush="#FF212528" Foreground="White">
+            <TextBox.Background>
+                <SolidColorBrush Color="#FF212528" Opacity="0.8"/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox HorizontalAlignment="Left" x:Name="Teext" Margin="125,239,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="322" Height="123" FontSize="16" CaretBrush="#FF673AB7" SelectionBrush="#FF212528" Foreground="White">
+            <TextBox.Background>
+                <SolidColorBrush Color="#FF212528" Opacity="0.8"/>
+            </TextBox.Background>
+        </TextBox>
+        <Button Content="Прикрепить файл" HorizontalAlignment="Left" Margin="125,367,0,0" VerticalAlignment="Top" Width="322" BorderBrush="#FF212528" Click="Button_Click_1">
+            <Button.Background>
+                <SolidColorBrush Color="#FF212528" Opacity="0.8"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Закрыть" HorizontalAlignment="Left" Margin="50,439,0,0" VerticalAlignment="Top" Width="126" BorderBrush="#FF212528" Click="Button_Click">
+            <Button.Background>
+                <SolidColorBrush Color="#FF212528" Opacity="0.8"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Отправить" x:Name="Enter" HorizontalAlignment="Left" Margin="322,439,0,0" VerticalAlignment="Top" Width="125" BorderBrush="#FF212528" Click="Enter_Click">
+            <Button.Background>
+                <SolidColorBrush Color="#FF212528" Opacity="0.8"/>
+            </Button.Background>
+        </Button>
 
     </Grid>
 
