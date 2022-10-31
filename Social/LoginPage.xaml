@@ -11,7 +11,7 @@
 
 
 
-        <TextBox HorizontalAlignment="Left" Margin="57,66,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="585" Height="38" Foreground="White" SelectionBrush="#FFFFC700" BorderBrush="#FFC7C7C7" FontSize="16" CaretBrush="#FFFFC700">
+        <TextBox x:Name="txtLogin" HorizontalAlignment="Left" Margin="57,66,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="585" Height="38" Foreground="White" SelectionBrush="#FFFFC700" BorderBrush="#FFC7C7C7" FontSize="16" CaretBrush="#FFFFC700">
             <TextBox.Background>
                 <SolidColorBrush Color="#FFA2A35B" Opacity="0"/>
             </TextBox.Background>

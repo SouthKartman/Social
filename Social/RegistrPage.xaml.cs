@@ -23,6 +23,16 @@ namespace Social
         public RegistrPage()
         {
             InitializeComponent();
+
+            txtLogin.Text = auth.login;
+            users user = bdconnect.socialEntities.users.FirstOrDefault(x => x.idauth == auth.id);
+            txtF.Text = user.f;
+            txtI.Text = user.i;
+            txtO.Text = user.o;
+            txtDR.Text = user.birthdate.ToString();
+            txtGender.Text = user.genders.gender;
+            this.auth = auth;
         }
+      
     }
 }
