@@ -5,22 +5,14 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Social"
       mc:Ignorable="d"
-      Title="WorkedPlace" Height="552" Width="943">
+      Title="WorkedPlace" Width="970" Height="561">
 
-    <Grid>
-        
+    <Grid Cursor="Hand">
+
         <Grid.Background>
             <ImageBrush ImageSource="/DSC_0114.jpg"/>
         </Grid.Background>
-
-        <StackPanel Margin="40,276,41,44">
-            <Frame></Frame>
-        </StackPanel>
-        <StackPanel Margin="524,10,41,302">
-            <Frame Source=""></Frame>
-        </StackPanel>
-        <StackPanel Margin="524,10,41,302">
-            <Frame Source=""/>
-        </StackPanel>
+        <Frame x:Name="avplayerfrm" Margin="69,0,511,309" Navigated="avplayerfrm_Navigated"/>
+       
     </Grid>
 </Page>

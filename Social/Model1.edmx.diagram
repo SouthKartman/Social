@@ -4,13 +4,12 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="8b64fe7e4fdf45be86bdbc6d90789363" Name="Diagram1">
-        <EntityTypeShape EntityType="socialModel.auth" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="socialModel.role" Width="1.5" PointX="0.625" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="socialModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="false" />
+      <Diagram DiagramId="681b45549f964fa98dba4de0284116f6" Name="Diagram1">
+        <EntityTypeShape EntityType="socialModel.auth" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="socialModel.role" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
         <AssociationConnector Association="socialModel.FK_auth_role" ManuallyRouted="false" />
-        <EntityTypeShape EntityType="socialModel.users" Width="1.5" PointX="6.25" PointY="1.125" />
-        <AssociationConnector Association="socialModel.FK_users_auth" />
+        <EntityTypeShape EntityType="socialModel.users" Width="1.5" PointX="3" PointY="5" />
+        <AssociationConnector Association="socialModel.FK_users_role" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

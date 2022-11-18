@@ -20,19 +20,69 @@ namespace Social
     /// </summary>
     public partial class RegistrPage : Page
     {
+        auth newauth;
+        users newusers;
+        
+        bool redakt;
         public RegistrPage()
         {
             InitializeComponent();
 
-            txtLogin.Text = auth.login;
-            users user = bdconnect.socialEntities.users.FirstOrDefault(x => x.idauth == auth.id);
-            txtF.Text = user.f;
-            txtI.Text = user.i;
-            txtO.Text = user.o;
-            txtDR.Text = user.birthdate.ToString();
-            txtGender.Text = user.genders.gender;
-            this.auth = auth;
+            newauth = new auth();
+            newusers = new users();
+            redakt = false;
+
         }
-      
+        
+        public RegistrPage(auth auth)
+        {
+            InitializeComponent();
+            redakt = true;
+            logintext.Text = auth.login;
+            users user = bdconnect.db.users.FirstOrDefault(x => x.idauth == auth.id);
+            nametext.Text = user.Name;
+            sertext.Text = user.Sername;
+            
+            //DR.SelectedDate = user.birthdate;
+
+            
+            newauth = auth;
+            newusers = user;
+        }
+        private void passwordbox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void regbtn_Click(object sender, RoutedEventArgs e)
+        {
+            
+            newauth.idrole = 2;
+            newauth.login = logintext.Text;
+            newauth.password = pb.Text;
+            newauth.email = email.Text;
+            newauth.sername = sertext.Text;
+            newauth.name = nametext.Text;
+            if (redakt == false) bdconnect.db.auth.Add(newauth);
+            bdconnect.db.SaveChanges();
+
+            newusers.Sername = sertext.Text;
+            newusers.Name = nametext.Text;
+            newusers.Login = logintext.Text;
+            newusers.birthday = (DateTime)DP.SelectedDate;
+            newusers.idrole = 2;
+            newusers.Email = email.Text;
+
+            newusers.idauth = newauth.id;
+            if (redakt == false) bdconnect.db.users.Add(newusers);
+            bdconnect.db.SaveChanges();
+            MessageBox.Show("Пользователь добавлен");
+           
+        }
+
+        private void nametext_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

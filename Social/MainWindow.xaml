@@ -33,7 +33,7 @@
         <Label Content="PhotoHelper" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="24" FontFamily="Cooper Black" Height="42" Width="176"/>
         <StackPanel Grid.Row="1" Margin="0,84,0,0" Grid.RowSpan="2">
             <Button Content="Главная" Height="57" Width="218" Background="#FF1E252D" BorderBrush="Black" Cursor="Hand" Click="Button_Click_4"/>
-            <Button Content="Рабочее место" Height="57" Width="219" Background="#FF1E252D" Cursor="Hand" BorderBrush="#FF090909"/>
+            <Button Content="Рабочее место" Height="57" Width="219" Background="#FF1E252D" Cursor="Hand" BorderBrush="#FF090909" Click="Button_Click_2"/>
             <Button Content="База данных" Height="57" Width="219" Background="#FF1E252D" BorderBrush="Black"/>
             <Button Content="Gmail" Height="56" Width="219" Background="#FF1E252D" BorderBrush="Black" Click="Button_Click"/>
             <Button Content="Услуги" Height="57" Width="219" Background="#FF1E252D" BorderBrush="Black"/>
@@ -41,7 +41,7 @@
             <Button  Content="Закрыть" Height="57" Width="218" Background="#FF1E252D" BorderBrush="Black" Cursor="Hand" Click="Button_Click_3"/>
         </StackPanel>
         <!--<ContentControl Grid.Column="1" FontFamily="Bodoni MT Black" Margin="0,81,0,0" Grid.RowSpan="2">-->
-        <Frame x:Name="frmMain" NavigationUIVisibility="Hidden" Grid.Column="1" Grid.RowSpan="2" Grid.ColumnSpan="2" Grid.Row="1"/>
+        <Frame x:Name="frmMain" NavigationUIVisibility="Hidden" Grid.Column="1" Grid.RowSpan="2" Grid.ColumnSpan="2" Grid.Row="1" Navigated="frmMain_Navigated"/>
         <!--</ContentControl>-->
         <Border Grid.Column="1" Background="#FF673AB7" Margin="589,0,0,0" Grid.ColumnSpan="2">
 

@@ -27,8 +27,32 @@ namespace Social
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            MainWindow MainWindow = new MainWindow();
-            MainWindow.Show();
+
+
+            auth currentUser = bdconnect.db.auth.FirstOrDefault(x => x.login == txtLogin.Text && x.password == boxpassword.Password);
+            if (currentUser != null)
+            {
+                switch (currentUser.idrole)
+                {
+                    case 1:
+                        MessageBox.Show("Вход администратора");
+                        
+                       // FrameLoad.MainFrame.Navigate(new HomeView());
+                        break;
+                    case 2:
+                        MessageBox.Show("Вход пользователя");
+                        //FrameLoad.MainFrame.Navigate(new HomeView(currentUser));
+                        break;
+                    default:
+                        MessageBox.Show("Неизвестная роль в системе");
+                        break;
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("Нет такого пользователя");
+            }
         }
     }
 }

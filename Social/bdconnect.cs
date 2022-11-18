@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Common;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Social
 {
-    internal class bdconnect
+    class bdconnect
     {
-        public static socialEntities socialEntities;
+        public static socialEntities db = new socialEntities();
+
     }
 }

@@ -73,7 +73,7 @@
                             </TransformGroup>
                         </Image.RenderTransform>
                     </Image>
-                    <Button Content="Перейти" HorizontalAlignment="Left" Margin="30,141,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+                    <Button Content="Перейти" HorizontalAlignment="Left" Margin="30,141,0,0" VerticalAlignment="Top" Click="Button_Click" Cursor="Hand"/>
 
                 </Grid>
             </Border>

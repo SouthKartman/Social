@@ -63,9 +63,18 @@ namespace Social
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
+            frmMain.Navigate(new HomeView());
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            frmMain.Navigate(new WorkedPlace()); // открытие страницы
             
         }
 
- 
+        private void frmMain_Navigated(object sender, NavigationEventArgs e)
+        {
+
+        }
     }
 }

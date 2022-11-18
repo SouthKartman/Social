@@ -16,18 +16,13 @@
                 <SolidColorBrush Color="#FFA2A35B" Opacity="0"/>
             </TextBox.Background>
         </TextBox>
-        <TextBox HorizontalAlignment="Left" Margin="57,126,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="585" Height="39" Foreground="White" SelectionBrush="#FFFFC700" BorderBrush="#FFC7C7C7" FontSize="16" CaretBrush="#FFC7C7C7">
-            <TextBox.Background>
+        <PasswordBox x:Name="boxpassword" Password="admin" HorizontalAlignment="Left" Margin="57,126,0,0"  VerticalAlignment="Top" Width="585" Height="39" Foreground="White" SelectionBrush="#FFFFC700" BorderBrush="#FFC7C7C7" FontSize="16" CaretBrush="#FFC7C7C7">
+            <PasswordBox.Background>
                 <SolidColorBrush Color="#FFA2A35B" Opacity="0"/>
-            </TextBox.Background>
-        </TextBox>
-        <Button  Content="Войти как Гость" HorizontalAlignment="Left" Margin="344,252,0,0" VerticalAlignment="Top" Height="31" Width="287" Background="#FFCD7B00" Click="Button_Click_1">
-            <Button.BorderBrush>
-                <SolidColorBrush Color="#FF673AB7" Opacity="0"/>
-            </Button.BorderBrush>
-        </Button>
+            </PasswordBox.Background>
+        </PasswordBox>
         <Border  Margin="46,0,516,313" Background="#FFCD7B00"/>
-        <Button  Content="Войти" HorizontalAlignment="Left" Margin="39,252,0,0" VerticalAlignment="Top" Height="31" Width="287" Background="#FFCD7B00" Click="Button_Click_1" Cursor="Hand">
+        <Button x:Name="loginbtn"  Content="Войти" HorizontalAlignment="Left" Margin="39,252,0,0" VerticalAlignment="Top" Height="31" Width="287" Background="#FFCD7B00" Click="Button_Click_1" Cursor="Hand">
             <Button.BorderBrush>
                 <SolidColorBrush Color="#FF673AB7" Opacity="0"/>
             </Button.BorderBrush>

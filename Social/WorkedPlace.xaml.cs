@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +24,25 @@ namespace Social
         public WorkedPlace()
         {
             InitializeComponent();
+
+            avplayerfrm.Navigate(new MediaPlayerPreScreen());
+            FrameLoad.MainFrame = avplayerfrm;
+
+        }
+
+        private void filexplorer_Navigated(object sender, NavigationEventArgs e)
+        {
+
+        }
+
+        private void filexplorer_Navigated_1(object sender, NavigationEventArgs e)
+        {
+
+        }
+
+        private void avplayerfrm_Navigated(object sender, NavigationEventArgs e)
+        {
+            
         }
     }
 }
