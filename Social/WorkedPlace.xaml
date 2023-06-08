@@ -51,7 +51,7 @@
             <Button Content="Заказы" Background="#FF1E252D" BorderBrush="#FF1E252D" Click="Button_Click_5"/>
             <Button Content="Админ Панель" Background="#FF1E252D" BorderBrush="#FF1E252D" Click="Button_Click_6"/>
         </StackPanel>
-        <TextBox x:Name="mysearchbox" HorizontalAlignment="Left" Margin="0,39,0,0" TextWrapping="Wrap" Text=" Быстрый Поиск" VerticalAlignment="Top" Width="230" Foreground="White" Background="#FFFF8A00" BorderBrush="#00000000" CaretBrush="#FFFF8A00" SelectionBrush="#FFFF8A00" Grid.RowSpan="2" TextChanged="mysearchbox_TextChanged"/>
+        <TextBox x:Name="mysearchbox"  HorizontalAlignment="Left" Margin="0,39,0,0" TextWrapping="Wrap" Text=" Быстрый Поиск" VerticalAlignment="Top" Width="230" Foreground="White" Background="#FFFF8A00" BorderBrush="#00000000" CaretBrush="#FFFF8A00" SelectionBrush="#FFFF8A00" Grid.RowSpan="2" TextChanged="mysearchbox_TextChanged"/>
 
 
 
