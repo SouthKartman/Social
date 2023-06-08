@@ -7,12 +7,54 @@
       mc:Ignorable="d"
       Title="WorkedPlace" Width="970" Height="561">
 
-    <Grid Cursor="Hand">
+    <Grid Cursor="Hand" Margin="0,0,10,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="16*"/>
+            <RowDefinition Height="171*"/>
+        </Grid.RowDefinitions>
 
         <Grid.Background>
             <ImageBrush ImageSource="/DSC_0114.jpg"/>
         </Grid.Background>
-        <Frame x:Name="avplayerfrm" Margin="69,0,511,309" Navigated="avplayerfrm_Navigated"/>
-       
+        <ListBox x:Name="Katalog" ItemsSource="{Binding Catalogs}" ItemTemplate="{StaticResource MyItemTemplateCatalog}" Margin="0,16,730,0" Foreground="#DDFFFFFF" Grid.Row="1" SelectionChanged="Katalog_SelectionChanged">
+            <ListBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#B2FF8A00" Offset="1"/>
+                </LinearGradientBrush>
+            </ListBox.Background>
+        </ListBox>
+        <Border BorderBrush="Black" BorderThickness="1" Margin="0,0,730,9" Background="#FFFF8A00"/>
+        <Label Content="Каталог" HorizontalAlignment="Left" Margin="95,7,0,0" VerticalAlignment="Top" Background="#00000000" Foreground="#DDFFFFFF"/>
+        <Border BorderBrush="Black" BorderThickness="1" Margin="230,0,262,9" Background="#FFFF8A00"/>
+        <Label Content="Рабочая область" HorizontalAlignment="Center" Margin="0,7,0,0" VerticalAlignment="Top" Foreground="#DDFFFFFF" Background="{x:Null}"/>
+        <Border BorderBrush="Black" BorderThickness="1" Margin="698,0,0,0" Background="#FF1E252D" Grid.RowSpan="2">
+            <StackPanel Margin="-1,76,0,280">
+                <Button Content="PhotoShop" Height="30" Width="173" Click="Button_Click_2" Background="#FF1E252D" BorderBrush="#FF1E252D"/>
+                <Button Content="AdobeEffects" Height="30" Width="174" Background="#FF1E252D" BorderBrush="#FF1E252D" Click="Button_Click_10"/>
+                <Button Content="SonyVegas" Height="30" Width="174" Background="#FF1E252D" BorderBrush="#FF1E252D" Click="Button_Click_4"/>
+                <Button Content="Blender" Height="30" Width="174" Background="#FF1E252D" BorderBrush="#FF1E252D" Click="Button_Click_12"/>
+                <Button Content="Adobe Illustrator" Height="30" Width="174" Background="#FF1E252D" BorderBrush="#FF1E252D" Click="Button_Click_11"/>
+                <Button Content="Adobe Primier" Height="30" Width="174" Click="Button_Click_3" Background="#FF1E252D" BorderBrush="#FF1E252D"/>
+            </StackPanel>
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="1" Margin="698,0,0,9" Background="#FEFF8A00"/>
+        <Label x:Name="Menu" Content="Для работы с контентом" HorizontalAlignment="Left" Margin="757,7,0,0" VerticalAlignment="Top" Background="#00000000" Foreground="#DDFFFFFF" FontSize="12"/>
+        <Button Content="Видеоплеер" HorizontalAlignment="Left" Margin="700,473,0,0" VerticalAlignment="Top" Height="40" Width="260" Click="Button_Click" Grid.Row="1"/>
+        <Frame Margin="230,39,260,0" x:Name="AdminPanel" Navigated="AdminPanel_Navigated" Background="#7F000000" LoadCompleted="AdminPanel_LoadCompleted" Grid.RowSpan="2"/>
+        <Border BorderBrush="Black" BorderThickness="1" Margin="698,252,0,232" Background="#FEFF8A00" Grid.Row="1"/>
+        <Label x:Name="Menu_Copy" Content="Меню рабочей области" HorizontalAlignment="Left" Margin="764,252,0,0" VerticalAlignment="Top" Background="#00000000" Foreground="#DDFFFFFF" FontSize="12" Grid.Row="1"/>
+        <StackPanel Margin="752,295,44,59" Grid.Row="1">
+            <Button Content="Администраторы" Background="#FF1E252D" BorderBrush="#FF1E252D" Click="Button_Click_8"/>
+            <Button Content="Пользователи" Background="#FF1E252D" BorderBrush="#FF1E252D" Click="Button_Click_7"/>
+            <Button Content="Проводник" Background="#FF1E252D" BorderBrush="#FF1E252D" Click="Button_Click_9"/>
+            <Button Content="Заказы" Background="#FF1E252D" BorderBrush="#FF1E252D" Click="Button_Click_5"/>
+            <Button Content="Админ Панель" Background="#FF1E252D" BorderBrush="#FF1E252D" Click="Button_Click_6"/>
+        </StackPanel>
+        <TextBox x:Name="mysearchbox" HorizontalAlignment="Left" Margin="0,39,0,0" TextWrapping="Wrap" Text=" Быстрый Поиск" VerticalAlignment="Top" Width="230" Foreground="White" Background="#FFFF8A00" BorderBrush="#00000000" CaretBrush="#FFFF8A00" SelectionBrush="#FFFF8A00" Grid.RowSpan="2" TextChanged="mysearchbox_TextChanged"/>
+
+
+
+
     </Grid>
 </Page>

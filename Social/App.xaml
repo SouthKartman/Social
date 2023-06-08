@@ -2,7 +2,7 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Social"
-             StartupUri="MainWindow.xaml">
+             StartupUri="registration.xaml">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -11,6 +11,100 @@
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.DeepPurple.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" />
             </ResourceDictionary.MergedDictionaries>
+
+            <DataTemplate x:Key="MyItemTemplateAdmins">
+                <StackPanel>
+                    <TextBlock Text="{Binding username}" FontWeight="Bold" />
+                    <TextBlock Text="{Binding password}" />
+                    <TextBlock Text="{Binding creationDate}" />
+                </StackPanel>
+            </DataTemplate>
+
+            <DataTemplate x:Key="MyItemTemplateUsers">
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="ID: " Foreground="White"></Label>
+                        <TextBlock Text="{Binding id}" FontWeight="Bold" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Имя: " Foreground="White"></Label>
+                        <TextBlock Text="{Binding name}" FontWeight="Bold" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="email: " Foreground="White"></Label>
+                        <TextBlock Text="{Binding email}" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Тел.Номер: " Foreground="White"></Label>
+                        <TextBlock Text="{Binding contactno}" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Область: " Foreground="White"></Label>
+                        <TextBlock Text="{Binding shippingState}" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Город: " Foreground="White"></Label>
+                        <TextBlock Text="{Binding shippingCity}" />
+                    </StackPanel>
+                    <!--<TextBlock Text="{Binding productImage1}" />-->
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Адрес: " Foreground="White"></Label>
+                        <TextBlock Text="{Binding shippingAddress}" />
+                    </StackPanel>
+                </StackPanel>
+            </DataTemplate>
+
+            <DataTemplate x:Key="MyItemTemplateCatalog">
+                <StackPanel >
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="ID: " Foreground="White"></Label>
+                        <TextBlock Text="{Binding id}" FontWeight="Bold" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Имя: " Foreground="White"></Label>
+                        <TextBlock Text="{Binding productName}" FontWeight="Bold" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Компания: " Foreground="White"></Label><TextBlock Text="{Binding productCompany}" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Наличие: " Foreground="White"></Label><TextBlock Text="{Binding productAvaibility}" />
+                    </StackPanel>
+                    <!--<TextBlock Text="{Binding productImage1}" />-->
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Цена: " Foreground="White"></Label>
+                        <TextBlock Text="{Binding productPrice}" />
+                        <Label Foreground="White" Content="руб."></Label>
+                    </StackPanel>
+                </StackPanel>
+            </DataTemplate>
+            
+            <DataTemplate x:Key="MyItemTemplateOrder">
+                <StackPanel >
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="ID Пользователя: " Foreground="White"></Label>
+                        <TextBlock Text="{Binding userId}" FontWeight="Bold" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="ID продукта: " Foreground="White"></Label>
+                        <TextBlock Text="{Binding productId}" FontWeight="Bold" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Метод оплаты: " Foreground="White"></Label>
+                        <TextBlock Text="{Binding paymentMethod}" />
+                    </StackPanel>
+                    <!--<TextBlock Text="{Binding productImage1}" />-->
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Дата прихода товара: " Foreground="White"></Label>
+                        <TextBlock Text="{Binding orderDate}" />
+                    </StackPanel>
+                    <!--<StackPanel Orientation="Horizontal">
+                        <Label Content="Статус: " Foreground="White"></Label>
+                        <TextBlock Text="{Binding status}" />
+                    </StackPanel>-->
+                </StackPanel>
+            </DataTemplate>
+
         </ResourceDictionary>
     </Application.Resources>
 </Application>

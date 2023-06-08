@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Social"
         mc:Ignorable="d"
-        Title="registration" Height="650" Width="1000" ResizeMode="NoResize" >
+        Title="registration" Height="650" Width="1000"
+        ResizeMode="NoResize">
     <Grid Margin="0,0,0,-6">
         <Grid.Background>
             <ImageBrush ImageSource="/DSC_0057.jpg"/>

@@ -9,34 +9,24 @@
     <Grid Height="335" VerticalAlignment="Top">
 
         <Border  Margin="156,8,406,324" Background="#FFCD7B00"/>
-        <TextBox x:Name="nametext" HorizontalAlignment="Center" Margin="0,16,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="586" Height="38" Foreground="White" SelectionBrush="#FFFFC700" BorderBrush="#FFC7C7C7" FontSize="16" CaretBrush="#FFFFC700" Text="Name">
-            <TextBox.Background>
-                <SolidColorBrush Color="#FFA2A35B" Opacity="0"/>
-            </TextBox.Background>
-        </TextBox>
-        <TextBox x:Name="sertext" HorizontalAlignment="Center" Margin="0,59,0,0" TextWrapping="Wrap" Text="Surname" VerticalAlignment="Top" Width="586" Height="39" Foreground="White" SelectionBrush="#FFFFC700" BorderBrush="#FFC7C7C7" FontSize="16" CaretBrush="#FFC7C7C7">
+        <TextBox x:Name="nametext" HorizontalAlignment="Center" Margin="0,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="586" Height="38" Foreground="White" SelectionBrush="#FFFFC700" BorderBrush="#FFC7C7C7" FontSize="16" CaretBrush="#FFFFC700" Text="Username" TextChanged="nametext_TextChanged">
             <TextBox.Background>
                 <SolidColorBrush Color="#FFA2A35B" Opacity="0"/>
             </TextBox.Background>
         </TextBox>
         <Border BorderThickness="1" Margin="228,0,450,332" Background="#FFCD7B00"/>
-        <TextBox x:Name="logintext" HorizontalAlignment="Center" Margin="0,98,0,0" TextWrapping="Wrap" Text="Login/Username" VerticalAlignment="Top" Width="586" Height="39" Foreground="White" SelectionBrush="#FFFFC700" BorderBrush="#FFC7C7C7" FontSize="16" CaretBrush="#FFC7C7C7">
+        <TextBox x:Name="pb" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="586" Height="39" Foreground="White" SelectionBrush="#FFFFC700" BorderBrush="#FFC7C7C7" FontSize="16" CaretBrush="#FFC7C7C7" Margin="0,112,0,0" >
             <TextBox.Background>
                 <SolidColorBrush Color="#FFA2A35B" Opacity="0"/>
             </TextBox.Background>
         </TextBox>
-        <TextBox x:Name="pb" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="586" Height="39" Foreground="White" SelectionBrush="#FFFFC700" BorderBrush="#FFC7C7C7" FontSize="16" CaretBrush="#FFC7C7C7" Margin="0,137,0,0" >
-            <TextBox.Background>
-                <SolidColorBrush Color="#FFA2A35B" Opacity="0"/>
-            </TextBox.Background>
-        </TextBox>
-        <TextBox x:Name="email" HorizontalAlignment="Center" Margin="0,176,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" Width="586" Height="39" Foreground="White" SelectionBrush="#FFFFC700" BorderBrush="#FFC7C7C7" FontSize="16" CaretBrush="#FFC7C7C7">
+        <TextBox x:Name="pbcon" HorizontalAlignment="Center" Margin="0,156,0,0" TextWrapping="Wrap" Text="Confirm Password" VerticalAlignment="Top" Width="586" Height="39" Foreground="White" SelectionBrush="#FFFFC700" BorderBrush="#FFC7C7C7" FontSize="16" CaretBrush="#FFC7C7C7">
             <TextBox.Background>
                 <SolidColorBrush Color="#FFA2A35B" Opacity="0"/>
             </TextBox.Background>
         </TextBox>
         <Button x:Name="regbtn" Content="Зарегистрироваться" HorizontalAlignment="Left" Margin="331,258,0,0" VerticalAlignment="Top" Width="292" Background="#FFCD7B00" BorderBrush="{x:Null}" Cursor="Hand" Click="regbtn_Click" />
-        <DatePicker  x:Name="DP" HorizontalAlignment="Center" Margin="0,215,0,0" VerticalAlignment="Top" Width="586" Foreground="#FF7E13E2" BorderBrush="#FFC7C7C7" Background="{x:Null}"/>
+        <!--<DatePicker  x:Name="DP" HorizontalAlignment="Center" Margin="0,215,0,0" VerticalAlignment="Top" Width="586" Foreground="#FF7E13E2" BorderBrush="#FFC7C7C7" Background="{x:Null}"/>-->
     </Grid>
 
 </Page>

@@ -33,7 +33,7 @@ namespace Social
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            Process.Start("http://localhost/wordpress/"); //открытие ссылки в браузере
+            Process.Start("http://localhost/shopping/introduce/intro.html");
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
@@ -45,6 +45,16 @@ namespace Social
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
             Process.Start("https://disk.yandex.ru/"); //открытие ссылки в браузере
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            Process.Start("http://localhost/shopping/index.php");
+        }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            Process.Start("http://localhost/shopping/index.php");
         }
     }
 }

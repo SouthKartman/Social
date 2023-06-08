@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace Social
 {
     /// <summary>
@@ -20,64 +22,59 @@ namespace Social
     /// </summary>
     public partial class RegistrPage : Page
     {
-        auth newauth;
-        users newusers;
-        
-        bool redakt;
+        //auth newauth;
+        //users newusers;
+
+        Config db = new Config();
+
+        //bool redakt;
         public RegistrPage()
         {
             InitializeComponent();
 
-            newauth = new auth();
-            newusers = new users();
-            redakt = false;
+            db.Connect("shopping");
 
-        }
-        
-        public RegistrPage(auth auth)
-        {
-            InitializeComponent();
-            redakt = true;
-            logintext.Text = auth.login;
-            users user = bdconnect.db.users.FirstOrDefault(x => x.idauth == auth.id);
-            nametext.Text = user.Name;
-            sertext.Text = user.Sername;
-            
-            //DR.SelectedDate = user.birthdate;
+            //newauth = new auth();
+            //newusers = new users();
+            //redakt = false;
 
-            
-            newauth = auth;
-            newusers = user;
-        }
-        private void passwordbox_TextChanged(object sender, TextChangedEventArgs e)
-        {
 
         }
 
         private void regbtn_Click(object sender, RoutedEventArgs e)
         {
-            
-            newauth.idrole = 2;
-            newauth.login = logintext.Text;
-            newauth.password = pb.Text;
-            newauth.email = email.Text;
-            newauth.sername = sertext.Text;
-            newauth.name = nametext.Text;
-            if (redakt == false) bdconnect.db.auth.Add(newauth);
-            bdconnect.db.SaveChanges();
+            //PHP registration
 
-            newusers.Sername = sertext.Text;
-            newusers.Name = nametext.Text;
-            newusers.Login = logintext.Text;
-            newusers.birthday = (DateTime)DP.SelectedDate;
-            newusers.idrole = 2;
-            newusers.Email = email.Text;
+            try
+            {
+                var password = pb.Text;
+                var password1 = pbcon.Text;
 
-            newusers.idauth = newauth.id;
-            if (redakt == false) bdconnect.db.users.Add(newusers);
-            bdconnect.db.SaveChanges();
-            MessageBox.Show("Пользователь добавлен");
-           
+                if (password == password1)
+                {
+                    // saves data in the database
+
+                    var hashpassword = md5.hashPassword(pb.Text);
+
+                    db.Execute("INSERT INTO `meneger` (`id`, `username`, `password`,`creationDate`) VALUES (NULL, '" + nametext.Text + "', '" + hashpassword + "',NULL);");
+                    MessageBox.Show("Регистрация Прошла успешно");
+                }
+                else
+                {
+                    MessageBox.Show("Пароли не совпадают");
+                }
+
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Нет Подключения к интернету");
+            }
+
+
+
+
+
         }
 
         private void nametext_TextChanged(object sender, TextChangedEventArgs e)
@@ -85,4 +82,59 @@ namespace Social
 
         }
     }
-}
+        
+
+
+        //public RegistrPage(auth auth)
+        //{
+        //    var dt = new mysqlconnect();
+        //    InitializeComponent();
+        //    redakt = true;
+        //    logintext.Text = auth.login;
+        //    users user = mysqlconnect.conn.users.FirstOrDefault(x => x.idauth == auth.id);
+        //    nametext.Text = user.Name;
+        //    sertext.Text = user.Sername;
+
+
+        //    //DR.SelectedDate = user.birthdate;
+
+
+        //    newauth = auth;
+        //    newusers = user;
+        //}
+        //private void passwordbox_TextChanged(object sender, TextChangedEventArgs e)
+        //{
+
+        //}
+
+        //private void regbtn_Click(object sender, RoutedEventArgs e)
+        //{
+
+        //    newauth.idrole = 2;
+        //    newauth.login = logintext.Text;
+        //    newauth.password = pb.Text;
+        //    newauth.email = email.Text;
+        //    newauth.sername = sertext.Text;
+        //    newauth.name = nametext.Text;
+        //    if (redakt == false) bdconnect.db.auth.Add(newauth);
+        //    bdconnect.db.SaveChanges();
+
+        //    newusers.Sername = sertext.Text;
+        //    newusers.Name = nametext.Text;
+        //    newusers.Login = logintext.Text;
+        //    newusers.birthday = (DateTime)DP.SelectedDate;
+        //    newusers.idrole = 2;
+        //    newusers.Email = email.Text;
+
+        //    newusers.idauth = newauth.id;
+        //    if (redakt == false) bdconnect.db.users.Add(newusers);
+        //    bdconnect.db.SaveChanges();
+        //    MessageBox.Show("Пользователь добавлен");
+
+        //}
+
+
+
+
+    }
+

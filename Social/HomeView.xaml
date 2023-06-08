@@ -41,7 +41,7 @@
                             </TransformGroup>
                         </Image.RenderTransform>
                     </Image>
-                    <Button Content="Далее" HorizontalAlignment="Left" Margin="30,141,0,0" VerticalAlignment="Top" Height="28" Width="90" Click="Button_Click_1"/>
+                    <Button Content="Далее" HorizontalAlignment="Left" Margin="30,141,0,0" VerticalAlignment="Top" Height="28" Width="90" Click="Button_Click_1" Background="#FFC67404" BorderBrush="#FFB77E3A"/>
 
                 </Grid>
             </Border>
@@ -73,7 +73,7 @@
                             </TransformGroup>
                         </Image.RenderTransform>
                     </Image>
-                    <Button Content="Перейти" HorizontalAlignment="Left" Margin="30,141,0,0" VerticalAlignment="Top" Click="Button_Click" Cursor="Hand"/>
+                    <Button Content="Перейти" HorizontalAlignment="Left" Margin="30,141,0,0" VerticalAlignment="Top" Click="Button_Click" Cursor="Hand" Background="#FF3A66B7"/>
 
                 </Grid>
             </Border>
@@ -109,7 +109,7 @@
                                 </TransformGroup>
                             </Image.RenderTransform>
                         </Image>
-                        <Button Content="Далее" HorizontalAlignment="Center" Margin="0,131,0,0" VerticalAlignment="Top" Height="28" Width="90" Click="Button_Click_2"/>
+                        <Button Content="Далее" HorizontalAlignment="Center" Margin="0,131,0,0" VerticalAlignment="Top" Height="28" Width="90" Click="Button_Click_2" Background="#FF3A4BB7" BorderBrush="#FF021092"/>
                         <TextBlock Text="Google Disk" FontSize="22" Foreground="White" FontFamily="Arial Black" Margin="20,97,20,44"/>
 
                     </Grid>
@@ -138,7 +138,7 @@
                                 </TransformGroup>
                             </Image.RenderTransform>
                         </Image>
-                        <Button Content="Далее" HorizontalAlignment="Center" Margin="0,144,0,0" VerticalAlignment="Top" Height="28" Width="90" Click="Button_Click_3"/>
+                        <Button Content="Далее" HorizontalAlignment="Center" Margin="0,144,0,0" VerticalAlignment="Top" Height="28" Width="90" Click="Button_Click_3" Background="#FFB73A3A" BorderBrush="#FFB73A3A"/>
                         <TextBlock Text="Yandex Disk" Margin="19,103,19,43" FontSize="22" Foreground="White" FontFamily="Arial Black"/>
 
                     </Grid>
@@ -157,7 +157,7 @@
                     </Border.Clip>
                     <Grid>
                         <StackPanel/>
-                        <Image Source="/Media/DSC_0245.jpg"  RenderTransformOrigin="0.5,0.5" Margin="-3,10,-3,93" >
+                        <Image Source="/favicon.ico"  RenderTransformOrigin="0.5,0.5" Margin="-3,28,-3,93" >
                             <Image.RenderTransform>
                                 <TransformGroup>
                                     <ScaleTransform/>
@@ -167,7 +167,7 @@
                                 </TransformGroup>
                             </Image.RenderTransform>
                         </Image>
-                        <Button Content="Далее" HorizontalAlignment="Center" Margin="0,145,0,0" VerticalAlignment="Top" Height="28" Width="90"/>
+                        <Button Content="Далее" HorizontalAlignment="Center" Margin="0,145,0,0" VerticalAlignment="Top" Height="28" Width="90" Click="Button_Click_4"/>
                         <TextBlock Text="Наш сайт" Margin="35,103,35,43" FontSize="22" Foreground="White" FontFamily="Arial Black"/>
 
                     </Grid>
@@ -186,7 +186,7 @@
                     </Border.Clip>
                     <Grid>
                         <StackPanel/>
-                        <Image Source="/Media/DSC_0245.jpg"  RenderTransformOrigin="0.5,0.5" Margin="-2,10,2,93" >
+                        <Image Source="/3.png"  RenderTransformOrigin="0.5,0.5" Margin="-2,10,2,93" >
                             <Image.RenderTransform>
                                 <TransformGroup>
                                     <ScaleTransform/>
@@ -196,7 +196,7 @@
                                 </TransformGroup>
                             </Image.RenderTransform>
                         </Image>
-                        <Button Content="Далее" HorizontalAlignment="Center" Margin="0,146,0,0" VerticalAlignment="Top" Height="28" Width="90"/>
+                        <Button Content="Далее" HorizontalAlignment="Center" Margin="0,146,0,0" VerticalAlignment="Top" Height="28" Width="90" BorderBrush="#FF3AB76F" Background="#FF3AB76F" Click="Button_Click_5"/>
                         <TextBlock Text="Товары" Margin="49,104,50,54" FontSize="22" Foreground="White" FontFamily="Arial Black"/>
 
                     </Grid>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -49,7 +50,7 @@ namespace Social
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            var response = MessageBox.Show("Do you really want to exit?", "Exiting...",
+            var response = MessageBox.Show("Вы точно хотите выйти?", "Выход...",
                                     MessageBoxButton.YesNo, MessageBoxImage.Exclamation);
             if (response == MessageBoxResult.No)
             {
@@ -75,6 +76,28 @@ namespace Social
         private void frmMain_Navigated(object sender, NavigationEventArgs e)
         {
 
+        }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            //Process.Start("http://localhost/shopping/meneger/index.php");
+            frmMain.Navigate(new Meneger()); // открытие страни
+
+        }
+
+        private void Button_Click_6(object sender, RoutedEventArgs e)
+        {
+            frmMain.Navigate(new Gallery()); // открытие страницы
+        }
+
+        private void Button_Click_7(object sender, RoutedEventArgs e)
+        {
+            Process.Start("https://mail.google.com/mail");
+        }
+
+        private void Button_Click_8(object sender, RoutedEventArgs e)
+        {
+            Process.Start("http://localhost/shopping/introduce/intro.html");
         }
     }
 }

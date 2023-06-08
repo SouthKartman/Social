@@ -10,7 +10,7 @@
         WindowStyle="None"
         Background="#1E252D" 
         
-        Title="MainWindow" Height="638" Width="1200">
+        Title="MainWindow" Height="664" Width="1229">
 
 
 
@@ -34,18 +34,19 @@
         <StackPanel Grid.Row="1" Margin="0,84,0,0" Grid.RowSpan="2">
             <Button Content="Главная" Height="57" Width="218" Background="#FF1E252D" BorderBrush="Black" Cursor="Hand" Click="Button_Click_4"/>
             <Button Content="Рабочее место" Height="57" Width="219" Background="#FF1E252D" Cursor="Hand" BorderBrush="#FF090909" Click="Button_Click_2"/>
-            <Button Content="База данных" Height="57" Width="219" Background="#FF1E252D" BorderBrush="Black"/>
-            <Button Content="Gmail" Height="56" Width="219" Background="#FF1E252D" BorderBrush="Black" Click="Button_Click"/>
-            <Button Content="Услуги" Height="57" Width="219" Background="#FF1E252D" BorderBrush="Black"/>
+            <Button Content="Менеджер" Height="57" Width="219" Background="#FF1E252D" BorderBrush="Black" Click="Button_Click_5"/>
+            <Button Content="Email" Height="56" Width="219" Background="#FF1E252D" BorderBrush="Black" Click="Button_Click"/>
+            <Button Content="Галлерея" Height="57" Width="219" Background="#FF1E252D" BorderBrush="Black" Click="Button_Click_8"/>
+            <Button Content="Google Почта" Height="57" Width="219" Background="#FF1E252D" BorderBrush="Black" Click="Button_Click_7"/>
             <Button Content="Выход из учетной записи" Height="57" Width="218" Background="#FF1E252D" BorderBrush="Black" Click="Button_Click_1" Cursor="Hand"/>
             <Button  Content="Закрыть" Height="57" Width="218" Background="#FF1E252D" BorderBrush="Black" Cursor="Hand" Click="Button_Click_3"/>
         </StackPanel>
         <!--<ContentControl Grid.Column="1" FontFamily="Bodoni MT Black" Margin="0,81,0,0" Grid.RowSpan="2">-->
-        <Frame x:Name="frmMain" NavigationUIVisibility="Hidden" Grid.Column="1" Grid.RowSpan="2" Grid.ColumnSpan="2" Grid.Row="1" Navigated="frmMain_Navigated"/>
+        <Frame x:Name="frmMain" NavigationUIVisibility="Hidden" Grid.Column="1" Grid.RowSpan="3" Navigated="frmMain_Navigated" Grid.ColumnSpan="2" Margin="0,91,0,0"/>
         <!--</ContentControl>-->
         <Border Grid.Column="1" Background="#FF673AB7" Margin="589,0,0,0" Grid.ColumnSpan="2">
 
-            <Calendar HorizontalAlignment="Left" VerticalAlignment="Center" Height="96" Width="200" Background="#FF673AB7" Margin="147,0,0,0" />
+            <Calendar HorizontalAlignment="Left" VerticalAlignment="Center" Height="96" Width="211" Background="#FF673AB7" Margin="136,0,0,0" />
         </Border>
         <Border Background="#FF673AB7" Grid.Column="1" Margin="0,0,318,0"></Border>
         <Label Content="Меню:" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" FontSize="20" Foreground="#DDF1F1F1" Width="68" Height="32"/>

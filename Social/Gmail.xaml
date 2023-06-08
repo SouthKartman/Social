@@ -13,12 +13,12 @@
         </Grid.Background>
 
         <Border Margin="29,87,173,416">
-            <Label Content="Send Email" Foreground="#DDFFFFFF" FontSize="24" FontFamily="Franklin Gothic Demi" Margin="10,5,-32,5"/>
+            <Label Content="Отправка Email" Foreground="#DDFFFFFF" FontSize="24" FontFamily="Franklin Gothic Demi" Margin="10,5,-32,5"/>
 
         </Border>
         <Label Content="Email" HorizontalAlignment="Left" Margin="29,161,0,0" VerticalAlignment="Top" Foreground="#DDFFFFFF" Height="34" Width="91" FontSize="16"/>
-        <Label Content="Object" HorizontalAlignment="Left" Margin="29,200,0,0" VerticalAlignment="Top" Foreground="#DDFFFFFF" Height="34" Width="91" FontSize="16"/>
-        <Label Content="Massage" HorizontalAlignment="Left" Margin="29,239,0,0" VerticalAlignment="Top" Foreground="#DDFFFFFF" Height="34" Width="91" FontSize="16"/>
+        <Label Content="Загаловок" HorizontalAlignment="Left" Margin="29,200,0,0" VerticalAlignment="Top" Foreground="#DDFFFFFF" Height="34" Width="91" FontSize="16"/>
+        <Label Content="Сообщение" HorizontalAlignment="Left" Margin="29,239,0,0" VerticalAlignment="Top" Foreground="#DDFFFFFF" Height="34" Width="91" FontSize="15"/>
         <TextBox HorizontalAlignment="Left" x:Name="Adress" Margin="125,161,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="322" Height="34" FontSize="16" CaretBrush="#FF673AB7" Foreground="White">
             <TextBox.Background>
                 <SolidColorBrush Color="#FF212528" Opacity="0.8"/>
