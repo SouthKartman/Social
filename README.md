@@ -2,6 +2,9 @@
 
 Welcome to Social - your universal template for creating an online store! This repository includes both a website for customers and applications for administrators and managers, providing complete control over your store.
 
+![image](https://github.com/SouthKartman/Social/assets/93534577/20097900-7a6f-40c2-a0f6-0e2b70f220f9)
+
+
 ## Features
 
 - **Customer Website:**
