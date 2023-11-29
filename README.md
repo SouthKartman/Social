@@ -28,6 +28,13 @@ Welcome to Social - your universal template for creating an online store! This r
 - **Manager Application (C# WPF):**
   - Track current orders and delivery statuses.
   - Manage inventory and update product information.
+ 
+  ![image](https://github.com/SouthKartman/Social/assets/93534577/5ad70777-b352-4117-8f3a-4d8a4780a63b)
+
+  <br><br>
+
+  ![image](https://github.com/SouthKartman/Social/assets/93534577/6e17c23a-e709-4993-8a94-fe3524d5741a)
+
 
 ## Getting Started
 
@@ -53,7 +60,7 @@ Welcome to Social - your universal template for creating an online store! This r
   
 5. Run the Administrator and Manager Applications (C# WPF):
 
-- Open the AdminApp and ManagerApp projects in Visual Studio.
+- Open the Social projects in Visual Studio.
 - Configure the database connection in the App.config files.
 - Run the applications.
 
@@ -119,6 +126,7 @@ Create your own store with Social Template - a place for convenient shopping and
 - Используйте встроенный сервер PHP или настройте свой веб-сервер.
   ```bash
   php -S localhost:8000
+  
 5.Откройте проект в браузере:
 
 - Перейдите по адресу http://localhost:8000 в вашем веб-браузере.
