@@ -36,6 +36,7 @@ Welcome to Social - your universal template for creating an online store! This r
 
 
 
+
 ## Getting Started
 
 1. **Clone the Repository:**
