@@ -52,7 +52,7 @@ Welcome to Social - your universal template for creating an online store! This r
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/username/ShopIT.git
+   git clone https://github.com/SouthKartman/Social.git
 
 
 1. Database Setup:
@@ -123,7 +123,7 @@ Create your own store with Social Template - a place for convenient shopping and
 
 1. **Клонирование репозитория:**
    ```bash
-   git clone https://github.com/username/ShopIT.git
+   git clone https://github.com/SouthKartman/Social.git
 
 2. Настройка базы данных:
 
