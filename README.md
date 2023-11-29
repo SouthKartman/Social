@@ -28,7 +28,9 @@ Welcome to Social - your universal template for creating an online store! This r
 - **Manager Application (C# WPF):**
   - Track current orders and delivery statuses.
   - Manage inventory and update product information.
-  
+
+<br><br>
+  # Web
   <br><br>
  
   ![image](https://github.com/SouthKartman/Social/assets/93534577/5ad70777-b352-4117-8f3a-4d8a4780a63b)
