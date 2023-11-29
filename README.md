@@ -65,4 +65,8 @@ Welcome to Social - your universal template for creating an online store! This r
 
 ## Notes
 
-Create your own store with ShopIT - a place for convenient shopping and effective management!
+Create your own store with Social Template - a place for convenient shopping and effective management!
+
+
+
+<br><br><br>
