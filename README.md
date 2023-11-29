@@ -1,6 +1,6 @@
 # Social - Online Store Service Template
 
-Welcome to ShopIT - your universal template for creating an online store! This repository includes both a website for customers and applications for administrators and managers, providing complete control over your store.
+Welcome to Social - your universal template for creating an online store! This repository includes both a website for customers and applications for administrators and managers, providing complete control over your store.
 
 ## Features
 
@@ -53,3 +53,13 @@ Welcome to ShopIT - your universal template for creating an online store! This r
 - Open the AdminApp and ManagerApp projects in Visual Studio.
 - Configure the database connection in the App.config files.
 - Run the applications.
+
+## Requirements
+- Web browser
+- PHP
+- MySQL
+- .NET Framework (for C# WPF applications)
+
+## Notes
+
+Create your own store with ShopIT - a place for convenient shopping and effective management!
