@@ -33,7 +33,7 @@ Welcome to Social - your universal template for creating an online store! This r
 
   <br><br>
 
-  ![image](https://github.com/SouthKartman/Social/assets/93534577/6e17c23a-e709-4993-8a94-fe3524d5741a)
+
 
 
 ## Getting Started
