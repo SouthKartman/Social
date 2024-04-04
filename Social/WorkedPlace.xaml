@@ -41,7 +41,7 @@
         <Border BorderBrush="Black" BorderThickness="1" Margin="698,0,0,9" Background="#FEFF8A00"/>
         <Label x:Name="Menu" Content="Для работы с контентом" HorizontalAlignment="Left" Margin="757,7,0,0" VerticalAlignment="Top" Background="#00000000" Foreground="#DDFFFFFF" FontSize="12"/>
         <Button Content="Видеоплеер" HorizontalAlignment="Left" Margin="700,473,0,0" VerticalAlignment="Top" Height="40" Width="260" Click="Button_Click" Grid.Row="1"/>
-        <Frame Margin="230,39,260,0" x:Name="AdminPanel" Navigated="AdminPanel_Navigated" Background="#7F000000" LoadCompleted="AdminPanel_LoadCompleted" Grid.RowSpan="2"/>
+        <Frame Margin="230,39,260,0" x:Name="AdminPanel"  Background="#7F000000"  Grid.RowSpan="2"/>
         <Border BorderBrush="Black" BorderThickness="1" Margin="698,252,0,232" Background="#FEFF8A00" Grid.Row="1"/>
         <Label x:Name="Menu_Copy" Content="Меню рабочей области" HorizontalAlignment="Left" Margin="764,252,0,0" VerticalAlignment="Top" Background="#00000000" Foreground="#DDFFFFFF" FontSize="12" Grid.Row="1"/>
         <StackPanel Margin="752,295,44,59" Grid.Row="1">

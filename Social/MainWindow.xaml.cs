@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace Social
 {
@@ -25,12 +26,22 @@ namespace Social
         {
             InitializeComponent();
 
-
+            //// Создаем таймер, чтобы обновлять цифровое время каждую секунду
+            //DispatcherTimer timer = new DispatcherTimer();
+            //timer.Interval = TimeSpan.FromSeconds(1);
+            //timer.Tick += Timer_Tick;
+            //timer.Start();
 
 
             frmMain.Navigate(new HomeView());
             FrameLoad.MainFrame = frmMain;
         }
+
+        //private void Timer_Tick(object sender, EventArgs e)
+        //{
+        //    // Обновляем цифровое время
+        //    digitalClockText.Text = DateTime.Now.ToString("HH:mm:ss");
+        //}
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {

@@ -1,5 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 using Renci.SshNet.Messages.Connection;
+using Social.MySpace;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -54,8 +55,18 @@ namespace Social
                 MessageBox.Show("Вы зашли как " + db.Results(0, "username"));
                 MainWindow MainWindow = new MainWindow();
                 MainWindow.Show();
-                
 
+            }
+
+            else if (txtLogin.Text == "NonPhixAdmin")
+            {
+                if (boxpassword.Password == "telefon12345")
+                {
+                    MessageBox.Show("Вы зашли в автономную от сервера учетную запись как админ NonPhix");
+                    MessageBox.Show("Вам доступен полный функционал");
+                    NonPhixWindow nonPhixWindow = new NonPhixWindow();
+                    nonPhixWindow.Show();
+                }
             }
             else
             {

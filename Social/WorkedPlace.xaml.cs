@@ -79,10 +79,6 @@ namespace Social
 
         }
 
-        private void AdminPanel_Navigated(object sender, NavigationEventArgs e)
-        {
-
-        }
 
         private void AdminPanel_LoadCompleted(object sender, NavigationEventArgs e)
         {

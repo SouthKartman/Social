@@ -10,11 +10,12 @@
         WindowStyle="None"
         Background="#1E252D" 
         
-        Title="MainWindow" Height="664" Width="1229">
+        Title="MainWindow" Height="664" Width="1229"  >
 
 
 
     <Grid>
+        
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition Width="942.8"/>
@@ -48,7 +49,9 @@
 
             <Calendar HorizontalAlignment="Left" VerticalAlignment="Center" Height="96" Width="211" Background="#FF673AB7" Margin="136,0,0,0" />
         </Border>
-        <Border Background="#FF673AB7" Grid.Column="1" Margin="0,0,318,0"></Border>
+        <Border Background="#FF673AB7" Grid.Column="1" Margin="0,0,318,0">
+            <!--<TextBlock x:Name="digitalClockText" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" Width="351"/>-->
+        </Border>
         <Label Content="Меню:" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" FontSize="20" Foreground="#DDF1F1F1" Width="68" Height="32"/>
     </Grid>
 </Window>

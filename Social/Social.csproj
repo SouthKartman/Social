@@ -17,7 +17,8 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <TargetFrameworkProfile />
-    <PublishUrl>publish\</PublishUrl>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\мвидео\Desktop\FastFront\socialdebug\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -27,10 +28,10 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationRevision>9</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -51,6 +52,27 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>CBC60DF1C75F7111B37572FB9C65C3D642C01E4A</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Social_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>NonPhixed.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="BouncyCastle.Crypto, Version=1.8.3.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
@@ -148,6 +170,19 @@
     </Reference>
     <Reference Include="Microsoft.Extensions.Primitives, Version=3.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Extensions.Primitives.3.1.1\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>..\packages\Unofficial.Microsoft.mshtml.7.0.3300\lib\net40\Microsoft.mshtml.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.Core, Version=1.0.1823.32, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.1823.32\lib\net45\Microsoft.Web.WebView2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.WinForms, Version=1.0.1823.32, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.1823.32\lib\net45\Microsoft.Web.WebView2.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.Wpf, Version=1.0.1823.32, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.1823.32\lib\net45\Microsoft.Web.WebView2.Wpf.dll</HintPath>
     </Reference>
     <Reference Include="MySql.Data, Version=8.0.22.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>..\packages\MySql.Data.8.0.22\lib\net452\MySql.Data.dll</HintPath>
@@ -267,6 +302,33 @@
     <Compile Include="Meneger.xaml.cs">
       <DependentUpon>Meneger.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MySpace\HomeViewNonPhix.xaml.cs">
+      <DependentUpon>HomeViewNonPhix.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MySpace\menus\BDMenus.xaml.cs">
+      <DependentUpon>BDMenus.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MySpace\menus\GameDevelopeAndroidDev.xaml.cs">
+      <DependentUpon>GameDevelopeAndroidDev.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MySpace\menus\GitHubMenu.xaml.cs">
+      <DependentUpon>GitHubMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MySpace\menus\MusicMenu.xaml.cs">
+      <DependentUpon>MusicMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MySpace\menus\ServersMenu.xaml.cs">
+      <DependentUpon>ServersMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MySpace\menus\VisualDEMenu.xaml.cs">
+      <DependentUpon>VisualDEMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MySpace\NonPhixWindow.xaml.cs">
+      <DependentUpon>NonPhixWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MySpace\NonPhixWorkedPlace.xaml.cs">
+      <DependentUpon>NonPhixWorkedPlace.xaml</DependentUpon>
+    </Compile>
     <Compile Include="OpenAPIs\.readthedocs.cs" />
     <Compile Include="Order.xaml.cs">
       <DependentUpon>Order.xaml</DependentUpon>
@@ -282,6 +344,9 @@
     </Compile>
     <Compile Include="VideoWindow.xaml.cs">
       <DependentUpon>VideoWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WebBrowser.xaml.cs">
+      <DependentUpon>WebBrowser.xaml</DependentUpon>
     </Compile>
     <Compile Include="WorkedPlace.xaml.cs">
       <DependentUpon>WorkedPlace.xaml</DependentUpon>
@@ -331,6 +396,42 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="MySpace\HomeViewNonPhix.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MySpace\menus\BDMenus.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MySpace\menus\GameDevelopeAndroidDev.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MySpace\menus\GitHubMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MySpace\menus\MusicMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MySpace\menus\ServersMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MySpace\menus\VisualDEMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MySpace\NonPhixWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MySpace\NonPhixWorkedPlace.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Order.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -348,6 +449,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="VideoWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WebBrowser.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -380,10 +485,12 @@
     </None>
     <None Include="App.Config" />
     <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <None Include="Social_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Media\DSC_0245.jpg" />
@@ -465,6 +572,19 @@
   <ItemGroup>
     <Resource Include="3.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="MySpace\Images\tg.png" />
+    <Resource Include="MySpace\Images\vk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="MySpace\Images\vk2.0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="NonPhixed.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="logs\roots\tgroot.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\MaterialDesignThemes.4.6.0\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.4.6.0\build\MaterialDesignThemes.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
@@ -472,5 +592,7 @@
       <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\MaterialDesignThemes.4.6.0\build\MaterialDesignThemes.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MaterialDesignThemes.4.6.0\build\MaterialDesignThemes.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Web.WebView2.1.0.1823.32\build\Microsoft.Web.WebView2.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Web.WebView2.1.0.1823.32\build\Microsoft.Web.WebView2.targets'))" />
   </Target>
+  <Import Project="..\packages\Microsoft.Web.WebView2.1.0.1823.32\build\Microsoft.Web.WebView2.targets" Condition="Exists('..\packages\Microsoft.Web.WebView2.1.0.1823.32\build\Microsoft.Web.WebView2.targets')" />
 </Project>

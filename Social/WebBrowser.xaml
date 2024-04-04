@@ -1,0 +1,23 @@
+﻿<Page x:Class="Social.WebBrowser"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:wv2="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
+      xmlns:local="clr-namespace:Social"
+      mc:Ignorable="d" 
+      d:DesignHeight="525" d:DesignWidth="470"
+      Title="WebBrowser" Background="#FF1E252D">
+
+    <Grid>
+        <wv2:WebView2 x:Name="webview" OverridesDefaultStyle="False"
+            ScrollViewer.CanContentScroll="False"
+            ScrollViewer.HorizontalScrollBarVisibility="Hidden" 
+            ScrollViewer.VerticalScrollBarVisibility="Hidden"
+            Margin="0,0,0,49" >
+            
+        </wv2:WebView2>
+        <TextBox Text="Введите ваш сайт для отображения..." Name="weathertext" Foreground="#fff" FontSize="9" Background="#00000000" Margin="18,489,134,11"/>
+        <Button Content="Обновить" Name="updateSite" FontSize="8" Background="#FF1E252D" BorderBrush="Black" Margin="341,491,10,0" Height="21" VerticalAlignment="Top" Click="updateSite_Click"/>
+    </Grid>
+</Page>

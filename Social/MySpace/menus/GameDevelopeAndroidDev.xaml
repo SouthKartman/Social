@@ -1,0 +1,22 @@
+﻿<Page x:Class="Social.MySpace.menus.GameDevelopeAndroidDev"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Social.MySpace.menus"
+      mc:Ignorable="d" 
+      Title="GameDevelopeAndroidDev"
+      d:DesignHeight="525" d:DesignWidth="470"
+      >
+
+    <Grid>
+        <StackPanel VerticalAlignment="Center">
+            <Button HorizontalAlignment="Center" Name="UnityHubbtn" Height="46" Foreground="#fff" Content="UnityHub" FontWeight="Bold" FontSize="16" Width="266" Margin="10" Click="UnityHubbtn_Click" />
+            <Button HorizontalAlignment="Center" Name="Unitybtn" Height="46" Foreground="#fff" Content="Unity" FontWeight="Bold" FontSize="16" Width="266" Margin="10" Click="Unitybtn_Click"/>
+            <Button HorizontalAlignment="Center" Name="Androidbtn" Height="46" Foreground="#fff" Content="AndroidStudio" FontWeight="Bold" FontSize="16" Width="266" Margin="10" Click="Androidbtn_Click"/>
+            <Button HorizontalAlignment="Center" Name="UnrealBtn" Height="46" Foreground="#fff" Content="UnrealEngine" FontWeight="Bold" FontSize="16" Width="266" Margin="10" Click="UnrealBtn_Click"/>
+            <Button HorizontalAlignment="Center" Name="PencilBtn" Height="46" Foreground="#fff" Content="Pencil" FontWeight="Bold" FontSize="16" Width="266" Margin="10" Click="PencilBtn_Click"/>
+            <Button HorizontalAlignment="Center" Name="ProjectsBtn" Height="46" Foreground="#fff" Content="Projects" FontWeight="Bold" FontSize="16" Width="266" Margin="10" Click="ProjectsBtn_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>

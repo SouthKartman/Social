@@ -1,0 +1,22 @@
+﻿<Window x:Class="Social.MySpace.menus.MusicMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Social.MySpace.menus"
+        mc:Ignorable="d"
+        Title="MusicMenu" Height="240" Width="350">
+    <Grid Background="#1E252D">
+        
+        <StackPanel VerticalAlignment="Center">
+           <Button Content="Yandex music" HorizontalAlignment="Center"  VerticalAlignment="Top" Width="292" Click="Button_Click"/>
+            <Button Content="VK Music" HorizontalAlignment="Center"  VerticalAlignment="Top" Width="292" Click="Button_Click_1"/>
+            <Button Content="Youtube Music" HorizontalAlignment="Center"  VerticalAlignment="Top" Width="292" Click="Button_Click_2"/>
+            <Button Content="Youtube" HorizontalAlignment="Center"  VerticalAlignment="Top" Width="292" Click="Button_Click_3"/>
+            <Button Content="AIMP" HorizontalAlignment="Center"  VerticalAlignment="Top" Width="292" Click="Button_Click_4"/>
+            <Button Content= "Discord" HorizontalAlignment="Center"  VerticalAlignment="Top" Width="292" Click="Button_Click_5"/>
+        </StackPanel>
+        
+
+    </Grid>
+</Window>

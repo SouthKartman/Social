@@ -25,6 +25,8 @@ namespace Social
 
             avplayerfrm.Navigate(new MediaPlayerPreScreen());
             FrameLoad.MainFrame = avplayerfrm;
+
+            this.Topmost = true;
         }
 
         private void avplayerfrm_Navigated(object sender, System.Windows.Navigation.NavigationEventArgs e)
